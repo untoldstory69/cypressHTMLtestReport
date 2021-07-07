@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-07T03:29:10.529Z",
+    "end": "2021-07-07T03:29:17.938Z",
+    "duration": 7409,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8bd570f1-88be-4091-baec-76c213bb223e",
+      "title": "",
+      "fullFile": "cypress/integration/uploadFile.js",
+      "file": "cypress/integration/uploadFile.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f27b73e7-b302-46eb-8037-518612961d93",
+          "title": "upload file in cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "upload file using cypress-file-upload plugin",
+              "fullTitle": "upload file in cypress upload file using cypress-file-upload plugin",
+              "timedOut": null,
+              "duration": 4565,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://the-internet.herokuapp.com/upload');\nconst filePath = './excelData.xlsx';\ncy.get('input[type=\"file\"]').attachFile(filePath);\ncy.get('#file-submit').click();\ncy.get('#uploaded-files').contains('excelData.xlsx');",
+              "err": {},
+              "uuid": "4aafbc79-d58c-46d0-9c32-0e56f39dc067",
+              "parentUUID": "f27b73e7-b302-46eb-8037-518612961d93",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4aafbc79-d58c-46d0-9c32-0e56f39dc067"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4565,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
